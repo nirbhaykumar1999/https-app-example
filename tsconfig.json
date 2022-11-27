@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+      "lib": ["ES2022"],
+      "module": "commonjs",
+      "target": "es2020",
+      "outDir": "dist",
+      "baseUrl": "src",
+      "resolveJsonModule": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "strictPropertyInitialization": false,
+  },
+  "include": [
+      "src/**/*",
+  ]
+}
