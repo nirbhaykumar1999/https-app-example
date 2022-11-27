@@ -12,8 +12,8 @@ app.route('/ping').get((req, res) => {
 });
 
 const httpsServer = https.createServer({
-  cert: fs.readFileSync(path.resolve(__dirname, '../certs/cert.pem')),
-  key: fs.readFileSync(path.resolve(__dirname, '../certs/key.pem'))
+  passphrase: "password",
+  pfx: fs.readFileSync(path.resolve(__dirname, '../certs/Cert.p12')),
 }, app);
 
 httpsServer
